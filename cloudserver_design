@@ -1,0 +1,25 @@
+Friday, Jun 15th, 2012
+
+Methods
+
+Ruby or Node.js
+
+I will use Ruby to do the tasks for cloudserver trial assignment.
+My reason for this decision:
+1. I have use Ruby (on Rails) in many project for 1,5 year. I only learn node.js less than a month but then the plan to use it in the project got cancelled.
+2. I'm more familiar with test for Ruby (rspec and cucumber), than the test for node.js
+3. Given the deadline is near and I still need to learn Amazon EC2, then there will be not enough time to also learn Node.js
+
+Design for assigned tasks:
+
+Task 1:
+Develop command line program to enumerate running Ec2 instances then save into database.
+
+Application design:
+1. Create single ruby code that will use GLI to provide command line.
+2. Use amazon-ec2 gem to fetch Ec2 instances that currently running.
+3. Save the data into database
+
+Database design
+
+TODO after learning the documentation of Amazon EC2
