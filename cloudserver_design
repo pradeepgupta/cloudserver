@@ -22,4 +22,22 @@ Application design:
 
 Database design
 
-TODO after learning the documentation of Amazon EC2
+Based on this API reference:
+http://docs.amazonwebservices.com/AWSEC2/latest/APIReference/ApiReference-query-DescribeInstances.html
+
+Here is the design of database that I will create:
+
+Instances
+	string:instance-id
+	string:instance-type
+	string:dns-name
+	string:architecture
+	integer:instance-state-code
+	string:instance-state-name
+	string:state-reason-code
+	string:state-reason-message
+	string:monitoring-state
+
+For the app, I will create a single file ruby code that using GLI.
+The AWS configuration will be stored in separated yml file.
+The required gems will be listed using Gemfile.
